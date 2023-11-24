@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bunga Bergerak</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #87CEEB; /* Warna latar belakang langit */
+        }
+
+        .bunga {
+            width: 50px;
+            height: 50px;
+            background-color: #FFD700; /* Warna kuning */
+            border-radius: 50%;
+            position: relative;
+            animation: bergerak 2s infinite alternate;
+        }
+
+        @keyframes bergerak {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bunga"></div>
+</body>
+</html>
